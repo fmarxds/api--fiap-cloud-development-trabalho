@@ -1,0 +1,14 @@
+server.port: 5000
+
+spring:
+  application:
+    name: api--fiap-cloud-development-trabalho
+  data:
+    mongodb:
+      database: fiap
+      uri: ${MONGODB_URI}
+  jms:
+    servicebus:
+      connection-string: ${SERVICEBUS_URI}
+      idle-timeout: 120000
+      pricing-tier: Standard
