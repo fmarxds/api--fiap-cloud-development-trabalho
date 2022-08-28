@@ -12,3 +12,13 @@ spring:
       connection-string: ${SERVICEBUS_URI}
       idle-timeout: 120000
       pricing-tier: Standard
+
+management:
+  endpoints:
+    web:
+      cors:
+        allowed-headers: '*'
+        allowed-methods: '*'
+        allowed-origins: '*'
+        exposed-headers: "Access-Control-Allow-Origin,Origin"
+        allow-credentials: false
