@@ -27,6 +27,11 @@ public class TemperaturaStatusController {
         temperaturaStatusService.sendTemperaturaStatus(model);
     }
 
+    @DeleteMapping
+    public void deleteTemeperaturaStatus() {
+        temperaturaStatusService.deleteAllTemperaturaStatus();
+    }
+
     @PostMapping("/loop")
     public ResponseEntity<Map<String, Object>> temperaturaStatusLoop() {
         ApiFiapCloudDevelopmentTrabalhoApplication.SEND_TEMPERATURA_STATUS_LOOP = !ApiFiapCloudDevelopmentTrabalhoApplication.SEND_TEMPERATURA_STATUS_LOOP;

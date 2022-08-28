@@ -30,4 +30,8 @@ public class TemperaturaStatusService {
         temperaturaStatusRepository.save(model);
     }
 
+    public void deleteAllTemperaturaStatus() {
+        temperaturaStatusRepository.deleteAll();
+    }
+
 }
